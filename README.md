@@ -49,4 +49,4 @@ Para este trabalho, as regras do jogo General serão simplificadas e o campeonat
 ## Equipe
 Entony Cesar Siminhuk;
 <br>
-Artur Lisboa;
+Artur Vinicius Gonçalves Lisboa;
