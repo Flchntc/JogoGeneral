@@ -17,7 +17,8 @@ public class usaCampeonato {
             System.out.println("|3 - Executar Rodada     |");
             System.out.println("|4 - Mostrar Cartela     |");
             System.out.println("|5 - Gravar Dados        |");
-            System.out.println("|6 - Finalizar Jogo      |");
+            System.out.println("|6 - Ler Dados Gravados  |");
+            System.out.println("|7 - Finalizar Jogo      |");
             System.out.println("|________________________|");
             System.out.print("Entre com uma opcao: ");
             opcao = input.nextInt();
@@ -47,13 +48,16 @@ public class usaCampeonato {
                 /*case 5://gravar dados
                     break;
                 */
-                case 6://sair
+                /*case 6://ler dados
+                    break;
+                */
+                case 7://sair
                     System.out.println("\nFinalizando Jogo General\n");
                     break;
                 default:
                     System.out.println("Opcao invalida. Tente novamente");
                 }
             }
-            while(opcao != 6);
+            while(opcao != 7);
     }
 }
