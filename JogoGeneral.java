@@ -224,7 +224,15 @@ public class JogoGeneral {
     }
 
     public void pontuarJogada(int jogadaEscolhid,int total){//jogadaEscolhid referente a jogada escolhida, total referente a pontuacao.
-        System.out.println("Jogada ja escolhida");
+        if(this.jogadas[jogadaEscolhid-1] == 0){
+            this.jogadas[jogadaEscolhid-1] = total;
+            if(total == 0){
+                this.jogadas[jogadaEscolhid-1] = -1;
+            }
+        }
+        else{
+            System.out.println("Jogada ja escolhida!");
+        }
     }
 
     public int[] getJogadas(){

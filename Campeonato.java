@@ -63,7 +63,7 @@ public class Campeonato {
     public void mostrarCartela(){
         for(int i = 0; i < jogadores.length; i++){
             if(jogadores[i] != null){
-                System.out.print("      "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")   ");
+                System.out.print("      "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")    ");
             }
         }
         System.out.println();

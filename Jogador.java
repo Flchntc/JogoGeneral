@@ -39,16 +39,53 @@ public class Jogador {
     public void mostraJogadasExecutadas(int i){
         int[] jogadasExecutadas = jogoG.getJogadas();
         if(i < 6){
-            System.out.print("" + jogadasExecutadas[i]+ "  ");
+            if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){
+                System.out.print("-" + "  ");
+            }
+            else{
+                System.out.print("" + jogadasExecutadas[i]+ "  ");
+            }
         }
         else{
-            System.out.print("" + jogadasExecutadas[i]+ "      ");
+            if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){
+                System.out.print("-" + "      ");
+            }
+            else{
+                if(jogadasExecutadas[i] < 10){
+                    System.out.print("" + jogadasExecutadas[i] + "      ");
+                }
+                else{
+                    System.out.print("" + jogadasExecutadas[i] + "     ");
+                }
+                System.out.print("" + jogadasExecutadas[i]+ "      ");
+            }   
         }
     }
 
     public void mostraJogadasCartela(int i){
         int[] jogadasExecutadas = jogoG.getJogadas();
-        System.out.print("      " + jogadasExecutadas[i] + "     ");
+        if(i < 9){
+            if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){
+                System.out.print("      X" + "     ");
+            }
+            else{
+                System.out.print("      " + jogadasExecutadas[i] + "     ");
+            }
+        }
+        else{
+            if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){
+                System.out.print("     X" + "      ");
+            }
+            else{
+                if(jogadasExecutadas[i] < 10){
+                    System.out.print("     " + jogadasExecutadas[i] + "      ");
+                }
+                else{
+                    System.out.print("     " + jogadasExecutadas[i] + "    ");
+                }
+            }
+        }
+        System.out.print("     ");
     }
 
     public String getNome(){
