@@ -36,7 +36,7 @@ public class Jogador {
         jogoG.pontuarJogada(jEscMaq, total);
     }
 
-    public void mostraJogadasExecutadas(int i){
+    public void mostraJogadasExecutadas(int i){//funcao para mostrar as jogadas executadas durante a partida
         int[] jogadasExecutadas = jogoG.getJogadas();
         if(i < 6){
             if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){
@@ -62,7 +62,7 @@ public class Jogador {
         }
     }
 
-    public void mostraJogadasCartela(int i){
+    public void mostraJogadasCartela(int i){//funcao para mostrar as jogadas estruturada para o formato da cartela
         int[] jogadasExecutadas = jogoG.getJogadas();
         if(i < 9){
             if(jogadasExecutadas[i] == 0 || jogadasExecutadas[i] == -1){

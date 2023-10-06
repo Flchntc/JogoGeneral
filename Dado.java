@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Dado{
+public class Dado{//classe do objeto dado
 
     private int sideUp;
 
