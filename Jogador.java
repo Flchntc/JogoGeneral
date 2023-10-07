@@ -30,7 +30,7 @@ public class Jogador {
         int jEscMaq;
         jEscMaq = random.nextInt(13) + 1;
         while(total == 0){
-            total = jogoG.validarJogada(jEscMaq);
+            total = jogoG.validarJogadaBot(jEscMaq);
             jEscMaq = random.nextInt(13) + 1;
         }
         jogoG.pontuarJogada(jEscMaq, total);

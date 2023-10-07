@@ -1,11 +1,11 @@
 import java.util.Scanner;
+
 public class usaCampeonato {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Campeonato j = new Campeonato();
         String n;
         String t;
 
-        //Campeonato jogo1 = new Campeonato(0);
         Scanner input = new Scanner(System.in);
         int opcao = 0;
         do{
@@ -17,8 +17,8 @@ public class usaCampeonato {
             System.out.println("|3 - Executar Rodada     |");
             System.out.println("|4 - Mostrar Cartela     |");
             System.out.println("|5 - Gravar Dados        |");
-            System.out.println("|6 - Ler Dados Gravados  |");
-            System.out.println("|7 - Finalizar Jogo      |");
+            System.out.println("|6 - Ler Dados           |");
+            System.out.println("|7- Finalizar Jogo       |");
             System.out.println("|________________________|");
             System.out.print("Entre com uma opcao: ");
             opcao = input.nextInt();
@@ -45,14 +45,17 @@ public class usaCampeonato {
                 case 4://mostrar cartela
                     j.mostrarCartela();
                     break;
-                /*case 5://gravar dados
+                case 5://gravar dados
+                    j.gravar_arquivo();
+                    System.out.println("Arquivo Gerado");
                     break;
-                */
-                /*case 6://ler dados
+                case 6:
+                    j.lerDoArquivo();
                     break;
-                */
                 case 7://sair
-                    System.out.println("\nFinalizando Jogo General\n");
+                    System.out.println("\nFinalizando Jogo General....\n");
+                    Thread.sleep(2000);
+                    System.out.print("");
                     break;
                 default:
                     System.out.println("Opcao invalida. Tente novamente");
