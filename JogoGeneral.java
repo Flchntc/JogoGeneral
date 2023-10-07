@@ -220,7 +220,7 @@ public class JogoGeneral {
         }
     }
 
-    public int validarJogadaBot(int jogadaEscolhida) {//valida a jogada escolhida, caso seja invalida retorna 0 e avisa sobre a validade da jogada.
+    public int validarJogadaBot(int jogadaEscolhida) {//valida a jogada escolhida para a maquina.
         switch (jogadaEscolhida) {
             case 1://jogada de 1
                 int total=0;
