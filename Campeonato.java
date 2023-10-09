@@ -36,7 +36,7 @@ public class Campeonato {
             if (jogadorAtual != null) {
                 jogadorAtual.jogarDados();
                 System.out.println("Rolando dados para: " + jogadorAtual.getNome());
-                Thread.sleep(2000);
+                Thread.sleep(1000);
                 System.out.println("");
                 System.out.println(jogadorAtual.toString());
     
@@ -54,7 +54,7 @@ public class Campeonato {
                 } 
                 if (jogadorAtual.getTipoJ().equalsIgnoreCase("M")) {
                     System.out.println("Escolhendo Jogada....");
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                     System.out.println("");
                     jogadorAtual.escolherJogada();
                 } 
@@ -75,7 +75,7 @@ public class Campeonato {
         System.out.print("");
         for(int i = 0; i < jogadores.length; i++){
             if(jogadores[i] != null){
-                System.out.print("    "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")  ");
+                System.out.print("    "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")      ");
             }
         }
         System.out.println();
@@ -131,7 +131,7 @@ public class Campeonato {
                     System.out.println("-----------------------------------------------------------------------------");
                     for(int i = 0; i < jogadores.length; i++){
                         if(jogadores[i] != null){
-                            System.out.print("     "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")  ");
+                            System.out.print("     "+jogadores[i].getNome() + "("+jogadores[i].getTipoJ() + ")      ");
                         }
                     }
                     System.out.println();
